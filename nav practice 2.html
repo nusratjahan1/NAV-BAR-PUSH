@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Practice</title>
+    
+</head>
+
+<style>
+   
+    nav{
+        background-color: rgb(105, 9, 139);
+        line-height: 30px;
+        height: 50px;
+     
+    }
+   
+    nav li{
+        list-style: none;
+        padding: 10px;
+    }
+
+    nav>ul>li{
+        float: left;
+    }
+
+
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color:rgb(105, 9, 139);
+        border-radius: 15px;
+        padding: 5px;
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+    nav>ul>li:hover>ul{
+      display: block;
+    }
+
+
+    nav a{
+        text-decoration: none;
+        color: rgb(184, 129, 26);
+        font-size: 20px;
+        font-weight: 700;
+        font-family: cursive;
+    }
+
+    nav li:hover{
+        background-color: pink;
+    }
+
+    h1{
+        text-align: center;
+        color: blue;
+        font-family: cursive;
+        font-size: 30px;
+    }
+
+</style>
+
+<body>
+    <h1> NUSRAT JAHAN'S PORTFOLIO</h1>
+
+    <nav>
+
+        <ul>
+            <li> <a href="#">HOME</a></li>
+            <li> <a href="#"> ABOUT US</a></li>
+            <li> <a href="#"> CONTACT US</a></li>
+            <li> <a href="#"> PROJECTS</a>
+            <ul class="dropdown">
+                <li> <a href="#"> HTML</a></li>
+                <li> <a href="#"> CSS</a></li>
+                <li> <a href="#">JavaScript</a></li>
+                <li> <a href="#"> REACT</a></li>
+            </ul>
+
+            </li>
+
+            <li> <a href="#"> MORE INFO</a>
+            <ul class="dropdown" >
+                <li> <a href="#"> ADDRESS</a></li>
+                <li> <a href="#"> PHONE NUMBER</a></li>
+
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
